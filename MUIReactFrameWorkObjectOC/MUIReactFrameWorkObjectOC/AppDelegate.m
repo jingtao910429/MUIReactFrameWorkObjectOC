@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+//mui框架
+#import "PDRCore.h"
+#import "PDRCommonString.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,7 +21,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 设置当前SDK运行模式*
+    [PDRCore initEngineWihtOptions:launchOptions withRunMode:PDRCoreRunModeWebviewClient];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem
+  completionHandler:(void(^)(BOOL succeeded))completionHandler{
+    [PDRCore handleSysEvent:PDRCoreSysEventPeekQuickAction withObject:shortcutItem];
+    completionHandler(true);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -26,11 +40,17 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+    
+    [[PDRCore Instance] handleSysEvent:PDRCoreSysEventEnterBackground withObject:nil];
+    
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
+    
+    [[PDRCore Instance] handleSysEvent:PDRCoreSysEventEnterForeGround withObject:nil];
+    
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 

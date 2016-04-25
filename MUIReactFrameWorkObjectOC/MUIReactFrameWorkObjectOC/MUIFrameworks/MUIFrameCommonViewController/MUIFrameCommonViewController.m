@@ -7,9 +7,16 @@
 //
 
 #import "MUIFrameCommonViewController.h"
-#import "NewCustomerCreate.h"
 #import "MUIFrameCommonManager.h"
-#import "RegisterPartnerViewController.h"
+
+//全屏大小
+#define SCREEN_BOUND_WIDTH  [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_BOUND_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+//远程Webview压缩包名称
+#define ZipName @"ManagerApp.zip"
+//远程Webview压缩包存储及解压路径
+#define ZipPath @"Pandora/apps"
 
 @interface MUIFrameCommonViewController ()
 
@@ -33,21 +40,25 @@
     
     if (pCoreHandle != nil) {
         
+        /*
         if (![self isKindOfClass:[RegisterPartnerViewController class]]) {
             
             [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookies:[Tool getCookies]
                                                                forURL:[NSURL URLWithString:self.httpURL]
                                                       mainDocumentURL:nil];
         }
+        */
         
         [[PDRCore Instance] startAsWebClient];
         CGRect StRect = CGRectMake(0, 0, SCREEN_BOUND_WIDTH, SCREEN_BOUND_HEIGHT - 64);
         
         NSString *appFrameName = @"WebDefaultID";
         
+        /*
         if ([self isKindOfClass:[RegisterPartnerViewController class]]) {
             appFrameName = @"RegisterPartnerViewController_ID";
         }
+         */
         
         if (_httpURL) {
             appFrame = [[PDRCoreAppFrame alloc] initWithName:appFrameName loadURL:_httpURL frame:StRect];

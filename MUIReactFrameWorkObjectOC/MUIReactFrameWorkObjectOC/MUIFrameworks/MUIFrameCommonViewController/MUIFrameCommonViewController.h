@@ -6,8 +6,6 @@
 //  Copyright © 2016年 ___RongYu100___. All rights reserved.
 //
 
-#import "RYBaseViewController.h"
-
 //MUI框架头文件
 #import "PDRToolSystem.h"
 #import "PDRToolSystemEx.h"
@@ -16,7 +14,7 @@
 #import "PDRCoreAppWindow.h"
 #import "PDRCoreAppInfo.h"
 
-@interface MUIFrameCommonViewController : RYBaseViewController {
+@interface MUIFrameCommonViewController : UIViewController {
     PDRCoreAppFrame* appFrame;
 }
 
