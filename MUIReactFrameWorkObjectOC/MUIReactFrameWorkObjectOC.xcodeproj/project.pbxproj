@@ -19,6 +19,7 @@
 		986ED8B01CCDC7A700E0FD6A /* MUIFrameCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986ED8AB1CCDC7A700E0FD6A /* MUIFrameCommonViewController.m */; };
 		986ED8B11CCDC7A700E0FD6A /* MUIFrameCommonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 986ED8AE1CCDC7A700E0FD6A /* MUIFrameCommonManager.m */; };
 		986ED8B31CCDC80A00E0FD6A /* inc in Resources */ = {isa = PBXBuildFile; fileRef = 986ED8B21CCDC80A00E0FD6A /* inc */; };
+		986ED8B51CCDC85900E0FD6A /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 986ED8B41CCDC85900E0FD6A /* PandoraApi.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		986ED8AD1CCDC7A700E0FD6A /* MUIFrameCommonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUIFrameCommonManager.h; sourceTree = "<group>"; };
 		986ED8AE1CCDC7A700E0FD6A /* MUIFrameCommonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUIFrameCommonManager.m; sourceTree = "<group>"; };
 		986ED8B21CCDC80A00E0FD6A /* inc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = inc; path = SDK/inc; sourceTree = "<group>"; };
+		986ED8B41CCDC85900E0FD6A /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PandoraApi.bundle; path = MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Bundles/PandoraApi.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		986ED8671CCDC68700E0FD6A = {
 			isa = PBXGroup;
 			children = (
+				986ED8B41CCDC85900E0FD6A /* PandoraApi.bundle */,
 				986ED8721CCDC68800E0FD6A /* MUIReactFrameWorkObjectOC */,
 				986ED88C1CCDC68800E0FD6A /* MUIReactFrameWorkObjectOCTests */,
 				986ED8971CCDC68800E0FD6A /* MUIReactFrameWorkObjectOCUITests */,
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				986ED8831CCDC68800E0FD6A /* LaunchScreen.storyboard in Resources */,
+				986ED8B51CCDC85900E0FD6A /* PandoraApi.bundle in Resources */,
 				986ED8B31CCDC80A00E0FD6A /* inc in Resources */,
 				986ED8801CCDC68800E0FD6A /* Assets.xcassets in Resources */,
 				986ED87E1CCDC68800E0FD6A /* Main.storyboard in Resources */,
@@ -457,8 +461,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/libs/Release-iphoneos",
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/libs/Release-iphonesimulator",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/inc/**",
+				);
 				INFOPLIST_FILE = MUIReactFrameWorkObjectOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC",
+					"$(SRCROOT)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Libs/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Libs/Release-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-llibPDRCore",
+					"-llibZip",
+					"-llibUI",
+					"-llibWidget",
+					"-llibNativeUI",
+					"-llibNativeObj",
+					"-llibIO",
+					"-llibPGInvocation",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.applechina.MUIReactFrameWorkObjectOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -468,8 +502,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/libs/Release-iphoneos",
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/libs/Release-iphonesimulator",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/inc/**",
+				);
 				INFOPLIST_FILE = MUIReactFrameWorkObjectOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC",
+					"$(SRCROOT)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Libs/Release$(EFFECTIVE_PLATFORM_NAME)",
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Libs/Release-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-llibPDRCore",
+					"-llibZip",
+					"-llibUI",
+					"-llibWidget",
+					"-llibNativeUI",
+					"-llibNativeObj",
+					"-llibIO",
+					"-llibPGInvocation",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.applechina.MUIReactFrameWorkObjectOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
