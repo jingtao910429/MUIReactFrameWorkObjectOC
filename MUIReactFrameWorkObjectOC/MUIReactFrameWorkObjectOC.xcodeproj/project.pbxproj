@@ -15,6 +15,10 @@
 		986ED8831CCDC68800E0FD6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986ED8811CCDC68800E0FD6A /* LaunchScreen.storyboard */; };
 		986ED88E1CCDC68800E0FD6A /* MUIReactFrameWorkObjectOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 986ED88D1CCDC68800E0FD6A /* MUIReactFrameWorkObjectOCTests.m */; };
 		986ED8991CCDC68800E0FD6A /* MUIReactFrameWorkObjectOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 986ED8981CCDC68800E0FD6A /* MUIReactFrameWorkObjectOCUITests.m */; };
+		986ED8AF1CCDC7A700E0FD6A /* MUIFrameCommonJSReactiveMehod.m in Sources */ = {isa = PBXBuildFile; fileRef = 986ED8A91CCDC7A700E0FD6A /* MUIFrameCommonJSReactiveMehod.m */; };
+		986ED8B01CCDC7A700E0FD6A /* MUIFrameCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986ED8AB1CCDC7A700E0FD6A /* MUIFrameCommonViewController.m */; };
+		986ED8B11CCDC7A700E0FD6A /* MUIFrameCommonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 986ED8AE1CCDC7A700E0FD6A /* MUIFrameCommonManager.m */; };
+		986ED8B31CCDC80A00E0FD6A /* inc in Resources */ = {isa = PBXBuildFile; fileRef = 986ED8B21CCDC80A00E0FD6A /* inc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		986ED8941CCDC68800E0FD6A /* MUIReactFrameWorkObjectOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MUIReactFrameWorkObjectOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		986ED8981CCDC68800E0FD6A /* MUIReactFrameWorkObjectOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUIReactFrameWorkObjectOCUITests.m; sourceTree = "<group>"; };
 		986ED89A1CCDC68800E0FD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		986ED8A81CCDC7A700E0FD6A /* MUIFrameCommonJSReactiveMehod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUIFrameCommonJSReactiveMehod.h; sourceTree = "<group>"; };
+		986ED8A91CCDC7A700E0FD6A /* MUIFrameCommonJSReactiveMehod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUIFrameCommonJSReactiveMehod.m; sourceTree = "<group>"; };
+		986ED8AA1CCDC7A700E0FD6A /* MUIFrameCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUIFrameCommonViewController.h; sourceTree = "<group>"; };
+		986ED8AB1CCDC7A700E0FD6A /* MUIFrameCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUIFrameCommonViewController.m; sourceTree = "<group>"; };
+		986ED8AD1CCDC7A700E0FD6A /* MUIFrameCommonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUIFrameCommonManager.h; sourceTree = "<group>"; };
+		986ED8AE1CCDC7A700E0FD6A /* MUIFrameCommonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUIFrameCommonManager.m; sourceTree = "<group>"; };
+		986ED8B21CCDC80A00E0FD6A /* inc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = inc; path = SDK/inc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +112,7 @@
 		986ED8721CCDC68800E0FD6A /* MUIReactFrameWorkObjectOC */ = {
 			isa = PBXGroup;
 			children = (
+				986ED8A61CCDC79600E0FD6A /* MUIFrameworks */,
 				986ED8761CCDC68800E0FD6A /* AppDelegate.h */,
 				986ED8771CCDC68800E0FD6A /* AppDelegate.m */,
 				986ED8791CCDC68800E0FD6A /* ViewController.h */,
@@ -138,6 +150,36 @@
 				986ED89A1CCDC68800E0FD6A /* Info.plist */,
 			);
 			path = MUIReactFrameWorkObjectOCUITests;
+			sourceTree = "<group>";
+		};
+		986ED8A61CCDC79600E0FD6A /* MUIFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				986ED8B21CCDC80A00E0FD6A /* inc */,
+				986ED8A71CCDC7A700E0FD6A /* MUIFrameCommonViewController */,
+			);
+			path = MUIFrameworks;
+			sourceTree = "<group>";
+		};
+		986ED8A71CCDC7A700E0FD6A /* MUIFrameCommonViewController */ = {
+			isa = PBXGroup;
+			children = (
+				986ED8A81CCDC7A700E0FD6A /* MUIFrameCommonJSReactiveMehod.h */,
+				986ED8A91CCDC7A700E0FD6A /* MUIFrameCommonJSReactiveMehod.m */,
+				986ED8AA1CCDC7A700E0FD6A /* MUIFrameCommonViewController.h */,
+				986ED8AB1CCDC7A700E0FD6A /* MUIFrameCommonViewController.m */,
+				986ED8AC1CCDC7A700E0FD6A /* Tool */,
+			);
+			path = MUIFrameCommonViewController;
+			sourceTree = "<group>";
+		};
+		986ED8AC1CCDC7A700E0FD6A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				986ED8AD1CCDC7A700E0FD6A /* MUIFrameCommonManager.h */,
+				986ED8AE1CCDC7A700E0FD6A /* MUIFrameCommonManager.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				986ED8831CCDC68800E0FD6A /* LaunchScreen.storyboard in Resources */,
+				986ED8B31CCDC80A00E0FD6A /* inc in Resources */,
 				986ED8801CCDC68800E0FD6A /* Assets.xcassets in Resources */,
 				986ED87E1CCDC68800E0FD6A /* Main.storyboard in Resources */,
 			);
@@ -270,8 +313,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				986ED8B01CCDC7A700E0FD6A /* MUIFrameCommonViewController.m in Sources */,
 				986ED87B1CCDC68800E0FD6A /* ViewController.m in Sources */,
 				986ED8781CCDC68800E0FD6A /* AppDelegate.m in Sources */,
+				986ED8AF1CCDC7A700E0FD6A /* MUIFrameCommonJSReactiveMehod.m in Sources */,
+				986ED8B11CCDC7A700E0FD6A /* MUIFrameCommonManager.m in Sources */,
 				986ED8751CCDC68800E0FD6A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
