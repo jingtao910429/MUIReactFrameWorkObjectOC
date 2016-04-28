@@ -20,6 +20,22 @@
 		986ED8B11CCDC7A700E0FD6A /* MUIFrameCommonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 986ED8AE1CCDC7A700E0FD6A /* MUIFrameCommonManager.m */; };
 		986ED8B31CCDC80A00E0FD6A /* inc in Resources */ = {isa = PBXBuildFile; fileRef = 986ED8B21CCDC80A00E0FD6A /* inc */; };
 		986ED8B51CCDC85900E0FD6A /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 986ED8B41CCDC85900E0FD6A /* PandoraApi.bundle */; };
+		98D4ADB21CD1A83C007D5575 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADB11CD1A83C007D5575 /* CoreBluetooth.framework */; };
+		98D4ADB41CD1AD03007D5575 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADB31CD1AD03007D5575 /* CoreTelephony.framework */; };
+		98D4ADB61CD1AD19007D5575 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADB51CD1AD19007D5575 /* CoreMotion.framework */; };
+		98D4ADB81CD1AD2C007D5575 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADB71CD1AD2C007D5575 /* SystemConfiguration.framework */; };
+		98D4ADBA1CD1AD42007D5575 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADB91CD1AD42007D5575 /* MobileCoreServices.framework */; };
+		98D4ADBC1CD1AD68007D5575 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADBB1CD1AD68007D5575 /* Social.framework */; };
+		98D4ADC01CD1AE6F007D5575 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADBF1CD1AE6F007D5575 /* libxml2.tbd */; };
+		98D4ADC61CD1B078007D5575 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADC51CD1B078007D5575 /* UIKit.framework */; };
+		98D4ADC81CD1B082007D5575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADC71CD1B081007D5575 /* Foundation.framework */; };
+		98D4ADCA1CD1B089007D5575 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADC91CD1B089007D5575 /* CFNetwork.framework */; };
+		98D4ADCC1CD1B0A0007D5575 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADCB1CD1B0A0007D5575 /* CoreFoundation.framework */; };
+		98D4ADCE1CD1B0B2007D5575 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADCD1CD1B0B2007D5575 /* libstdc++.tbd */; };
+		98D4ADD01CD1B0C5007D5575 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADCF1CD1B0C5007D5575 /* libz.tbd */; };
+		98D4ADD21CD1B0DD007D5575 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADD11CD1B0DD007D5575 /* AudioToolbox.framework */; };
+		98D4ADD41CD1B0EE007D5575 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADD31CD1B0EE007D5575 /* MediaPlayer.framework */; };
+		98D4ADD61CD1B0FF007D5575 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D4ADD51CD1B0FF007D5575 /* CoreAudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +80,24 @@
 		986ED8AE1CCDC7A700E0FD6A /* MUIFrameCommonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUIFrameCommonManager.m; sourceTree = "<group>"; };
 		986ED8B21CCDC80A00E0FD6A /* inc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = inc; path = SDK/inc; sourceTree = "<group>"; };
 		986ED8B41CCDC85900E0FD6A /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PandoraApi.bundle; path = MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Bundles/PandoraApi.bundle; sourceTree = "<group>"; };
+		98D4ADB11CD1A83C007D5575 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		98D4ADB31CD1AD03007D5575 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		98D4ADB51CD1AD19007D5575 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		98D4ADB71CD1AD2C007D5575 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		98D4ADB91CD1AD42007D5575 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		98D4ADBB1CD1AD68007D5575 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		98D4ADBF1CD1AE6F007D5575 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		98D4ADC11CD1AFBB007D5575 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		98D4ADC31CD1AFD1007D5575 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		98D4ADC51CD1B078007D5575 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		98D4ADC71CD1B081007D5575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		98D4ADC91CD1B089007D5575 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		98D4ADCB1CD1B0A0007D5575 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		98D4ADCD1CD1B0B2007D5575 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		98D4ADCF1CD1B0C5007D5575 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		98D4ADD11CD1B0DD007D5575 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		98D4ADD31CD1B0EE007D5575 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		98D4ADD51CD1B0FF007D5575 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +105,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D4ADD61CD1B0FF007D5575 /* CoreAudio.framework in Frameworks */,
+				98D4ADD41CD1B0EE007D5575 /* MediaPlayer.framework in Frameworks */,
+				98D4ADD21CD1B0DD007D5575 /* AudioToolbox.framework in Frameworks */,
+				98D4ADD01CD1B0C5007D5575 /* libz.tbd in Frameworks */,
+				98D4ADCE1CD1B0B2007D5575 /* libstdc++.tbd in Frameworks */,
+				98D4ADCC1CD1B0A0007D5575 /* CoreFoundation.framework in Frameworks */,
+				98D4ADCA1CD1B089007D5575 /* CFNetwork.framework in Frameworks */,
+				98D4ADC81CD1B082007D5575 /* Foundation.framework in Frameworks */,
+				98D4ADC61CD1B078007D5575 /* UIKit.framework in Frameworks */,
+				98D4ADC01CD1AE6F007D5575 /* libxml2.tbd in Frameworks */,
+				98D4ADBC1CD1AD68007D5575 /* Social.framework in Frameworks */,
+				98D4ADBA1CD1AD42007D5575 /* MobileCoreServices.framework in Frameworks */,
+				98D4ADB81CD1AD2C007D5575 /* SystemConfiguration.framework in Frameworks */,
+				98D4ADB61CD1AD19007D5575 /* CoreMotion.framework in Frameworks */,
+				98D4ADB41CD1AD03007D5575 /* CoreTelephony.framework in Frameworks */,
+				98D4ADB21CD1A83C007D5575 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +144,24 @@
 		986ED8671CCDC68700E0FD6A = {
 			isa = PBXGroup;
 			children = (
+				98D4ADD51CD1B0FF007D5575 /* CoreAudio.framework */,
+				98D4ADD31CD1B0EE007D5575 /* MediaPlayer.framework */,
+				98D4ADD11CD1B0DD007D5575 /* AudioToolbox.framework */,
+				98D4ADCF1CD1B0C5007D5575 /* libz.tbd */,
+				98D4ADCD1CD1B0B2007D5575 /* libstdc++.tbd */,
+				98D4ADCB1CD1B0A0007D5575 /* CoreFoundation.framework */,
+				98D4ADC91CD1B089007D5575 /* CFNetwork.framework */,
+				98D4ADC71CD1B081007D5575 /* Foundation.framework */,
+				98D4ADC51CD1B078007D5575 /* UIKit.framework */,
+				98D4ADC31CD1AFD1007D5575 /* AssetsLibrary.framework */,
+				98D4ADC11CD1AFBB007D5575 /* CoreLocation.framework */,
+				98D4ADBF1CD1AE6F007D5575 /* libxml2.tbd */,
+				98D4ADBB1CD1AD68007D5575 /* Social.framework */,
+				98D4ADB91CD1AD42007D5575 /* MobileCoreServices.framework */,
+				98D4ADB71CD1AD2C007D5575 /* SystemConfiguration.framework */,
+				98D4ADB51CD1AD19007D5575 /* CoreMotion.framework */,
+				98D4ADB31CD1AD03007D5575 /* CoreTelephony.framework */,
+				98D4ADB11CD1A83C007D5575 /* CoreBluetooth.framework */,
 				986ED8B41CCDC85900E0FD6A /* PandoraApi.bundle */,
 				986ED8721CCDC68800E0FD6A /* MUIReactFrameWorkObjectOC */,
 				986ED88C1CCDC68800E0FD6A /* MUIReactFrameWorkObjectOCTests */,
@@ -461,25 +529,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/libs/Release-iphoneos",
 					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/libs/Release-iphonesimulator",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/inc/**",
+					"${SDK_DIR}/usr/include/libxml2",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/inc/**",
 				);
 				INFOPLIST_FILE = MUIReactFrameWorkObjectOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC",
-					"$(SRCROOT)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Libs/Release$(EFFECTIVE_PLATFORM_NAME)",
-					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Libs/Release-iphoneos",
+					"$(inherited)",
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Libs/Release$(EFFECTIVE_PLATFORM_NAME)",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -502,25 +571,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/libs/Release-iphoneos",
 					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/libs/Release-iphonesimulator",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/inc/**",
+					"${SDK_DIR}/usr/include/libxml2",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/inc/**",
 				);
 				INFOPLIST_FILE = MUIReactFrameWorkObjectOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC",
-					"$(SRCROOT)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Libs/Release$(EFFECTIVE_PLATFORM_NAME)",
-					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Libs/Release-iphoneos",
+					"$(inherited)",
+					"$(PROJECT_DIR)/MUIReactFrameWorkObjectOC/MUIFrameworks/SDK/Libs/Release$(EFFECTIVE_PLATFORM_NAME)",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -606,6 +676,7 @@
 				986ED89F1CCDC68800E0FD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		986ED8A01CCDC68800E0FD6A /* Build configuration list for PBXNativeTarget "MUIReactFrameWorkObjectOCTests" */ = {
 			isa = XCConfigurationList;
@@ -614,6 +685,7 @@
 				986ED8A21CCDC68800E0FD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		986ED8A31CCDC68800E0FD6A /* Build configuration list for PBXNativeTarget "MUIReactFrameWorkObjectOCUITests" */ = {
 			isa = XCConfigurationList;
@@ -622,6 +694,7 @@
 				986ED8A51CCDC68800E0FD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
